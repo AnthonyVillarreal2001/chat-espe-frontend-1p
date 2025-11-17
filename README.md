@@ -208,14 +208,3 @@ types/index.test.ts   - 6 tests (interfaces TypeScript)
 4. **Gestión** → Monitoreo salas activas
 
 ---
-
-## Mejoras Futuras
-
-- [ ] **Notificaciones Push** - Alertas navegador
-- [ ] **Historial Persistente** - Almacenamiento mensajes
-- [ ] **Salas Privadas** - Invitaciones por link
-- [ ] **Moderación** - Herramientas admin avanzadas
-- [ ] **Themes** - Personalización interfaz
-- [ ] **PWA** - Aplicación web progresiva
-
----
