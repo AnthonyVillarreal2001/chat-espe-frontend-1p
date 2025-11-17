@@ -4,15 +4,16 @@
 
 **Fecha:** 17 de Noviembre, 2025  
 **Versión:** 1.0.0  
-**Materia:** Aplicaciones Distribuidas - P1  
+**Desarrollador:** Estudiante ESPE  
+**Materia:** Aplicaciones Distribuidas - Primer Parcial  
 
 ---
 
-## Descripción del Proyecto
+## 🎯 Descripción del Proyecto
 
 **Chat Seguro ESPE** es una aplicación de chat en tiempo real que permite a los usuarios crear y unirse a salas de conversación seguras. El sistema está dividido en dos componentes principales: un frontend desarrollado en React + TypeScript y un backend en Python con Flask-SocketIO.
 
-### Características Principales
+### 🌟 Características Principales
 
 - ✅ **Salas de Chat Seguras** - Sistema de PIN para acceso controlado
 - ✅ **Comunicación en Tiempo Real** - WebSockets con Socket.IO
@@ -24,7 +25,7 @@
 
 ---
 
-## Arquitectura del Sistema
+## 🏗️ Arquitectura del Sistema
 
 ### Frontend (React + TypeScript)
 ```
@@ -43,6 +44,10 @@ src/
 └── socket.ts            # Configuración Socket.IO
 ```
 
+### Backend (Mongo + Redis)
+
+![Chat Seguro ESPE - Captura del Proyecto](./project-screenshot.jpeg)
+
 ### Tecnologías Utilizadas
 - **React 19.1.1** - Librería UI moderna
 - **TypeScript 5.9.3** - Tipado estático
@@ -54,9 +59,9 @@ src/
 
 ---
 
-## Sistema de Testing
+## 🧪 Sistema de Testing
 
-### Cobertura de Código: **82.03%**
+### Cobertura de Código: **82.03%** 🎉
 
 | Categoría  | Cobertura | Mejora |
 |------------|-----------|---------|
@@ -79,7 +84,7 @@ src/
 
 ---
 
-## Configuración Docker
+## 🐳 Configuración Docker
 
 ### Estructura de Contenedores
 ```yaml
@@ -104,7 +109,7 @@ CORS_ORIGINS=http://localhost:5173
 
 ---
 
-## Instalación y Despliegue
+## 🚀 Instalación y Despliegue
 
 ### Prerrequisitos
 - Node.js 18+
@@ -143,7 +148,7 @@ docker-compose up --build
 
 ---
 
-## Resultados de Testing
+## 📊 Resultados de Testing
 
 ### Componentes con 100% Cobertura
 - ✅ `AdminLogin.tsx` - Login administrativo
@@ -167,7 +172,7 @@ types/index.test.ts   - 6 tests (interfaces TypeScript)
 
 ---
 
-## Scripts Disponibles
+## 🔧 Scripts Disponibles
 
 | Comando | Descripción |
 |---------|-------------|
@@ -181,7 +186,13 @@ types/index.test.ts   - 6 tests (interfaces TypeScript)
 
 ---
 
-## Métricas del Proyecto
+## 📈 Métricas del Proyecto
+
+### Líneas de Código
+- **Componentes React:** ~800 líneas
+- **Tests:** ~600 líneas
+- **Configuración:** ~200 líneas
+- **Total:** ~1,600 líneas
 
 ### Funcionalidades Implementadas
 - 🔐 **Autenticación** - Sistema admin/usuario
@@ -193,7 +204,7 @@ types/index.test.ts   - 6 tests (interfaces TypeScript)
 
 ---
 
-## Flujo de Usuario
+## 🌐 Flujo de Usuario
 
 ### Usuario Regular
 1. **Inicio** → Página principal con opciones
@@ -208,3 +219,31 @@ types/index.test.ts   - 6 tests (interfaces TypeScript)
 4. **Gestión** → Monitoreo salas activas
 
 ---
+
+## 🔮 Mejoras Futuras
+
+- [ ] **Notificaciones Push** - Alertas navegador
+- [ ] **Historial Persistente** - Almacenamiento mensajes
+- [ ] **Salas Privadas** - Invitaciones por link
+- [ ] **Moderación** - Herramientas admin avanzadas
+- [ ] **Themes** - Personalización interfaz
+- [ ] **PWA** - Aplicación web progresiva
+
+---
+
+## 📞 Contacto y Soporte
+
+**Desarrollador:** Estudiante ESPE  
+**Institución:** Escuela Politécnica del Ejército  
+**Materia:** Aplicaciones Distribuidas  
+**Periodo:** Primer Parcial 2025  
+
+---
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado con fines académicos para la materia de Aplicaciones Distribuidas en la Universidad ESPE.
+
+---
+
+*Informe generado automáticamente - Noviembre 2025* 🚀
