@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# Chat ESPE - Frontend React + TypeScript + Socket.IO 🇪🇨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend oficial del proyecto **Chat en Tiempo Real** desarrollado para el **1er Parcial** de la **ESPE** (Escuela Superior Politécnica del Ejército).
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18.3-blue)
+![Vite](https://img.shields.io/badge/Vite-5.4-green)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-purple)
+![Socket.IO](https://img.shields.io/badge/Socket.IO_Client-4.7-red)
+![ESPE](https://img.shields.io/badge/Proyecto-ESPE_2025-success)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Link del Backend:** https://github.com/AnthonyVillarreal2001/chat-espe-backend-1p  
+**Link del Frontend (este repo):** https://github.com/AnthonyVillarreal2001/chat-espe-frontend-1p
 
-## React Compiler
+## Características
+- Login de administrador (credenciales fijas)
+- Creación de salas (texto o multimedia) con PIN
+- Unirse a salas con room_id + PIN + nickname
+- Chat en tiempo real (mensajes y archivos)
+- Vista previa de imágenes y archivos recibidos
+- Lista de usuarios conectados
+- Notificaciones toast (éxito/error)
+- Bloqueo automático si ya estás conectado en otra pestaña
+- Diseño 100% responsive (móvil y escritorio)
+- Totalmente en **TypeScript** (código limpio y seguro)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación y Ejecución (2 comandos)
 
-## Expanding the ESLint configuration
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/AnthonyVillarreal2001/chat-espe-frontend-1p.git
+cd chat-espe-frontend-1p
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 2. Instalar dependencias
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 3. ¡Levantar el frontend!
+npm run dev
